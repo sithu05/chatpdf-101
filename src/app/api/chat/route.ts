@@ -24,7 +24,7 @@ export async function POST(req: Request) {
 		const result = await streamText({
 			model: openai("gpt-3.5-turbo"),
 			system: "You are a helpful assistant.",
-			temperature: 0.3,
+			temperature: 1.0,
 			tools: {
 				getInformation: tool({
 					description: `get information from your knowledge base to answer questions.`,

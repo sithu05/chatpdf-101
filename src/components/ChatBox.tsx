@@ -22,8 +22,6 @@ export default function ChatBox({
 			initialMessages,
 		});
 
-	console.log(messages);
-
 	return (
 		<div className="relative flex flex-col w-full h-full overflow-y-scroll">
 			<div className="sticky top-o inset-x-0 p-2 bg-white h-fit">

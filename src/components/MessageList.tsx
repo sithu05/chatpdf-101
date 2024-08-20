@@ -20,7 +20,7 @@ export default function MessageList({ messages }: { messages: Message[] }) {
 							},
 						)}
 					>
-						<p>{message.content}</p>
+						<div className="whitespace-pre-line">{message.content}</div>
 					</div>
 				</div>
 			))}
