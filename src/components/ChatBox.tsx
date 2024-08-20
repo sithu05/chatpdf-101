@@ -3,7 +3,7 @@
 import { useChat, Message } from "ai/react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Loader2, SendIcon } from "lucide-react";
+import { SendIcon } from "lucide-react";
 import MessageList from "@/components/MessageList";
 
 export default function ChatBox({
@@ -29,9 +29,7 @@ export default function ChatBox({
 			</div>
 
 			<div className="mt-auto">
-				<MessageList
-					messages={messages.filter((message) => message.content !== "")}
-				/>
+				<MessageList messages={messages} />
 			</div>
 
 			<form
